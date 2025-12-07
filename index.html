@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="hero bg-blue-200 min-h-screen">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="text-center lg:text-left">
+      
+    </div>
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <h1 class="text-5xl font-bold">Results: <span id="results">0.00</span></h1>
+       <p class="py-6 text-center"> Make easy to your calculation </p>
+        <fieldset class="fieldset">
+          <label class="label font-bold">First Digit</label>
+          <input id="first-digit" type="number" class="input" placeholder="First Digit" />
+          <label class="label font-bold">Second Digit</label>
+          <input id="second-digit" type="number" class="input" placeholder="Second Digit" />
+          <div>
+          <button id="add" class="btn btn-neutral mt-4">+</button>
+          <button id="sub" class="btn btn-neutral mt-4">-</button>
+          <button id="mul" class="btn btn-neutral mt-4">*</button>
+          <button id="div" class="btn btn-neutral mt-4">/</button>
+          <button id="reset" type="reset" class="btn btn-neutral mt-4">Reset</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="operation.js"></script>
+</body>
+</html>
+
+
